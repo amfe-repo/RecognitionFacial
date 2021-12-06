@@ -21,3 +21,4 @@ C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\
 C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.exe
 C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.pdb
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.ScamForm.resources
