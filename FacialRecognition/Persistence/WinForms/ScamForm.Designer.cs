@@ -62,12 +62,10 @@
             // lblMinimize
             // 
             this.lblMinimize.AutoSize = true;
-            this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMinimize.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinimize.Location = new System.Drawing.Point(766, 1);
-            this.lblMinimize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMinimize.Location = new System.Drawing.Point(1022, 1);
             this.lblMinimize.Name = "lblMinimize";
-            this.lblMinimize.Size = new System.Drawing.Size(28, 37);
+            this.lblMinimize.Size = new System.Drawing.Size(33, 45);
             this.lblMinimize.TabIndex = 1;
             this.lblMinimize.Text = "-";
             this.lblMinimize.Click += new System.EventHandler(this.lblMinimize_Click);
@@ -75,12 +73,10 @@
             // lblExit
             // 
             this.lblExit.AutoSize = true;
-            this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblExit.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExit.Location = new System.Drawing.Point(796, 1);
-            this.lblExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblExit.Location = new System.Drawing.Point(1062, 1);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(33, 37);
+            this.lblExit.Size = new System.Drawing.Size(39, 45);
             this.lblExit.TabIndex = 0;
             this.lblExit.Text = "X";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
@@ -91,7 +87,8 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(416, 514);
+            this.button1.Location = new System.Drawing.Point(555, 633);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(399, 46);
             this.button1.TabIndex = 1;
@@ -105,7 +102,7 @@
             this.label1.Location = new System.Drawing.Point(410, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 32);
+            this.label1.Size = new System.Drawing.Size(161, 45);
             this.label1.TabIndex = 2;
             this.label1.Text = "Full name";
             // 
@@ -126,7 +123,7 @@
             this.label2.Location = new System.Drawing.Point(410, 137);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 32);
+            this.label2.Size = new System.Drawing.Size(77, 45);
             this.label2.TabIndex = 4;
             this.label2.Text = "Age";
             // 
@@ -137,7 +134,7 @@
             this.label3.Location = new System.Drawing.Point(410, 230);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 32);
+            this.label3.Size = new System.Drawing.Size(177, 45);
             this.label3.TabIndex = 5;
             this.label3.Text = "Enrollment";
             // 
@@ -148,7 +145,7 @@
             this.label4.Location = new System.Drawing.Point(410, 322);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 32);
+            this.label4.Size = new System.Drawing.Size(158, 45);
             this.label4.TabIndex = 6;
             this.label4.Text = "First dose";
             // 
@@ -159,7 +156,7 @@
             this.label5.Location = new System.Drawing.Point(410, 416);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 32);
+            this.label5.Size = new System.Drawing.Size(205, 45);
             this.label5.TabIndex = 7;
             this.label5.Text = "Second dose";
             // 
@@ -240,7 +237,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ScamForm";
             this.Text = "ScamForm";
-            this.Load += new System.EventHandler(this.ScamForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

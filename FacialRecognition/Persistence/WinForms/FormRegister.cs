@@ -11,21 +11,16 @@ using System.Runtime.InteropServices;
 
 namespace Persistence.WinForms
 {
-    public partial class ScamForm : Form
+    public partial class FormRegister : Form
     {
-        public ScamForm()
+        public FormRegister()
         {
             InitializeComponent();
         }
 
-        private void lblExit_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void lblMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
