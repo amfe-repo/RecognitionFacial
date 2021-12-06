@@ -76,7 +76,8 @@ namespace Persistence
             {
                 textBox2.Text = "Password";
                 textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-
+                //Hola vida
+                ///asdsafsatgsasasdgadsa
             }
         }
 
