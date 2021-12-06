@@ -92,7 +92,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(532, 56);
             this.button1.TabIndex = 1;
-            this.button1.Text = "PLEASE SCAN";
+            this.button1.Text = "PLEASE SCANZZZ";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
