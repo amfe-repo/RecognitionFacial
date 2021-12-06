@@ -9,3 +9,15 @@ E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.exe
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.pdb
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.Login.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\Persistence.exe.config
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\Persistence.exe
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\Persistence.pdb
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\UI.csproj.AssemblyReference.cache
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\UI.csproj.SuggestedBindingRedirects.cache
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.Properties.Resources.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.Login.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.ScamForm.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.exe
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.pdb
