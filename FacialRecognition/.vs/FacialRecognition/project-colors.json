@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8ed97d82-32ce-4d44-badd-fb97b4a359be": {
+      "ProjectGuid": "8ed97d82-32ce-4d44-badd-fb97b4a359be",
+      "DisplayName": "FacialRecognition",
+      "ColorIndex": 0
+    },
+    "818b8765-0816-4542-9252-6f000d9ae790": {
+      "ProjectGuid": "818b8765-0816-4542-9252-6f000d9ae790",
+      "DisplayName": "UI",
+      "ColorIndex": 1
+    },
+    "2fbc559a-e59a-49bd-abb8-bcb222c425b1": {
+      "ProjectGuid": "2fbc559a-e59a-49bd-abb8-bcb222c425b1",
+      "DisplayName": "Layering",
+      "ColorIndex": 2
+    },
+    "1b4de6bb-7a9a-4715-8d78-e11118146276": {
+      "ProjectGuid": "1b4de6bb-7a9a-4715-8d78-e11118146276",
+      "DisplayName": "Layering",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
