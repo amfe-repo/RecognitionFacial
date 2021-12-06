@@ -25,3 +25,11 @@ C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.ScamForm.resources
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.Administration.resources
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.FormRegister.resources
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\Layering1.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\Layering1.pdb
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\Layering1.dll.config
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.xml
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\UI.csproj.CopyComplete
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.xml

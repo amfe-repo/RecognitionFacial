@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UserModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="user_tb">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameUser" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="Enrollment" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="FirstDose" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SecondDose" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Vaccinated" Type="bit" Nullable="false" />
+    <Property Name="RoleUser" Type="bit" Nullable="false" />
+  </EntityType>
+  <Function Name="EditarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NameUser" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Enrollment" Type="char" Mode="In" />
+    <Parameter Name="FirstDose" Type="varchar" Mode="In" />
+    <Parameter Name="SecondDose" Type="varchar" Mode="In" />
+    <Parameter Name="Vaccinated" Type="bit" Mode="In" />
+    <Parameter Name="RoleUser" Type="bit" Mode="In" />
+    <Parameter Name="idUser" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUser" Type="int" Mode="In" />
+  </Function>
+  <Function Name="InsertarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NameUser" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Enrollment" Type="char" Mode="In" />
+    <Parameter Name="FirstDose" Type="varchar" Mode="In" />
+    <Parameter Name="SecondDose" Type="varchar" Mode="In" />
+    <Parameter Name="Vaccinated" Type="bit" Mode="In" />
+    <Parameter Name="RoleUser" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="MostrarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="UserModelStoreContainer">
+    <EntitySet Name="user_tb" EntityType="Self.user_tb" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UserModelStoreContainer" CdmEntityContainer="UserEntities">
+    <EntitySetMapping Name="user_tb">
+      <EntityTypeMapping TypeName="UserModel.user_tb">
+        <MappingFragment StoreEntitySet="user_tb">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Enrollment" ColumnName="Enrollment" />
+          <ScalarProperty Name="FirstDose" ColumnName="FirstDose" />
+          <ScalarProperty Name="SecondDose" ColumnName="SecondDose" />
+          <ScalarProperty Name="Vaccinated" ColumnName="Vaccinated" />
+          <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EditarDatos" FunctionName="UserModel.Store.EditarDatos" />
+    <FunctionImportMapping FunctionImportName="EliminarDatos" FunctionName="UserModel.Store.EliminarDatos" />
+    <FunctionImportMapping FunctionImportName="InsertarDatos" FunctionName="UserModel.Store.InsertarDatos" />
+    <FunctionImportMapping FunctionImportName="MostrarDatos" FunctionName="UserModel.Store.MostrarDatos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="UserModel.MostrarDatos_Result">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Enrollment" ColumnName="Enrollment" />
+          <ScalarProperty Name="FirstDose" ColumnName="FirstDose" />
+          <ScalarProperty Name="SecondDose" ColumnName="SecondDose" />
+          <ScalarProperty Name="Vaccinated" ColumnName="Vaccinated" />
+          <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

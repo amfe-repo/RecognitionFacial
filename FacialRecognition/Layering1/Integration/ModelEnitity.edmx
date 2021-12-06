@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UserModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="user_tb">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameUser" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Enrollment" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="FirstDose" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="SecondDose" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Vaccinated" Type="bit" Nullable="false" />
+          <Property Name="RoleUser" Type="bit" Nullable="false" />
+        </EntityType>
+        <Function Name="EditarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NameUser" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Enrollment" Type="char" Mode="In" />
+          <Parameter Name="FirstDose" Type="varchar" Mode="In" />
+          <Parameter Name="SecondDose" Type="varchar" Mode="In" />
+          <Parameter Name="Vaccinated" Type="bit" Mode="In" />
+          <Parameter Name="RoleUser" Type="bit" Mode="In" />
+          <Parameter Name="idUser" Type="int" Mode="In" />
+        </Function>
+        <Function Name="EliminarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idUser" Type="int" Mode="In" />
+        </Function>
+        <Function Name="InsertarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NameUser" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Enrollment" Type="char" Mode="In" />
+          <Parameter Name="FirstDose" Type="varchar" Mode="In" />
+          <Parameter Name="SecondDose" Type="varchar" Mode="In" />
+          <Parameter Name="Vaccinated" Type="bit" Mode="In" />
+          <Parameter Name="RoleUser" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="MostrarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="UserModelStoreContainer">
+          <EntitySet Name="user_tb" EntityType="Self.user_tb" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UserModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="user_tb">
+          <Key>
+            <PropertyRef Name="idUser" />
+          </Key>
+          <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameUser" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Enrollment" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FirstDose" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SecondDose" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Vaccinated" Type="Boolean" Nullable="false" />
+          <Property Name="RoleUser" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="UserEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="user_tb" EntityType="Self.user_tb" />
+          <FunctionImport Name="EditarDatos">
+            <Parameter Name="NameUser" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Enrollment" Mode="In" Type="String" />
+            <Parameter Name="FirstDose" Mode="In" Type="String" />
+            <Parameter Name="SecondDose" Mode="In" Type="String" />
+            <Parameter Name="Vaccinated" Mode="In" Type="Boolean" />
+            <Parameter Name="RoleUser" Mode="In" Type="Boolean" />
+            <Parameter Name="idUser" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="EliminarDatos">
+            <Parameter Name="idUser" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="InsertarDatos">
+            <Parameter Name="NameUser" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Enrollment" Mode="In" Type="String" />
+            <Parameter Name="FirstDose" Mode="In" Type="String" />
+            <Parameter Name="SecondDose" Mode="In" Type="String" />
+            <Parameter Name="Vaccinated" Mode="In" Type="Boolean" />
+            <Parameter Name="RoleUser" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="MostrarDatos" ReturnType="Collection(UserModel.MostrarDatos_Result)" />
+        </EntityContainer>
+        <ComplexType Name="MostrarDatos_Result">
+          <Property Type="Int32" Name="idUser" Nullable="false" />
+          <Property Type="String" Name="NameUser" Nullable="false" MaxLength="40" />
+          <Property Type="Int32" Name="Age" Nullable="false" />
+          <Property Type="String" Name="Enrollment" Nullable="false" MaxLength="11" />
+          <Property Type="String" Name="FirstDose" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="SecondDose" Nullable="false" MaxLength="20" />
+          <Property Type="Boolean" Name="Vaccinated" Nullable="false" />
+          <Property Type="Boolean" Name="RoleUser" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UserModelStoreContainer" CdmEntityContainer="UserEntities">
+          <EntitySetMapping Name="user_tb">
+            <EntityTypeMapping TypeName="UserModel.user_tb">
+              <MappingFragment StoreEntitySet="user_tb">
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Enrollment" ColumnName="Enrollment" />
+                <ScalarProperty Name="FirstDose" ColumnName="FirstDose" />
+                <ScalarProperty Name="SecondDose" ColumnName="SecondDose" />
+                <ScalarProperty Name="Vaccinated" ColumnName="Vaccinated" />
+                <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="EditarDatos" FunctionName="UserModel.Store.EditarDatos" />
+          <FunctionImportMapping FunctionImportName="EliminarDatos" FunctionName="UserModel.Store.EliminarDatos" />
+          <FunctionImportMapping FunctionImportName="InsertarDatos" FunctionName="UserModel.Store.InsertarDatos" />
+          <FunctionImportMapping FunctionImportName="MostrarDatos" FunctionName="UserModel.Store.MostrarDatos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="UserModel.MostrarDatos_Result">
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
+                <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Enrollment" ColumnName="Enrollment" />
+                <ScalarProperty Name="FirstDose" ColumnName="FirstDose" />
+                <ScalarProperty Name="SecondDose" ColumnName="SecondDose" />
+                <ScalarProperty Name="Vaccinated" ColumnName="Vaccinated" />
+                <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

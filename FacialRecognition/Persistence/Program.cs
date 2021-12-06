@@ -17,7 +17,7 @@ namespace Persistence
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ScamForm());
+            Application.Run(new Administration());
         }
     }
 }

@@ -1,0 +1,12 @@
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\Layering1.dll.config
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\Layering1.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\Layering1.pdb
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\EntityFramework.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\EntityFramework.SqlServer.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\EntityFramework.xml
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\bin\Debug\EntityFramework.SqlServer.xml
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering.csproj.AssemblyReference.cache
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering.csproj.CoreCompileInputs.cache
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering.csproj.CopyComplete
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering1.dll
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering1.pdb

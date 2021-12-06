@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Layering1.Domain;
 
 namespace Persistence.WinForms
 {
     public partial class Administration : Form
     {
+        private DataHelpers dh = new DataHelpers();
         public Administration()
         {
             InitializeComponent();
@@ -39,5 +41,37 @@ namespace Persistence.WinForms
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void refresh_data() 
+        {
+            dataGridView1.Rows.Clear();
+
+            
+
+            foreach (var oObj in dh.ShowData())
+            {
+                dataGridView1.Rows.Add(new object[]
+                {
+                    oObj.idUser,
+                    oObj.NameUser,
+                    oObj.Enrollment,
+                    oObj.FirstDose,
+                    oObj.SecondDose,
+                    oObj.Vaccinated,
+                    oObj.RoleUser,
+                    "Edit",
+                    "Delete"
+                });
+            }
+        }
+
+        private void Administration_Load(object sender, EventArgs e)
+        {
+            refresh_data();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            refresh_data();
+        }
     }
 }

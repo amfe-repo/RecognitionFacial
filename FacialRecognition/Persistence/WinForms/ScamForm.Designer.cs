@@ -64,6 +64,7 @@
             // lblExit
             // 
             this.lblExit.AutoSize = true;
+            this.lblExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblExit.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExit.Location = new System.Drawing.Point(796, 0);
             this.lblExit.Name = "lblExit";
@@ -75,6 +76,7 @@
             // lblMinimize
             // 
             this.lblMinimize.AutoSize = true;
+            this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMinimize.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimize.Location = new System.Drawing.Point(744, 0);
             this.lblMinimize.Name = "lblMinimize";
