@@ -69,7 +69,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(72, 208);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 160);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(306, 274);
             this.pictureBox1.TabIndex = 1;
