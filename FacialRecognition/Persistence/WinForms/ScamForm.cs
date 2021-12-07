@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using FaceRecognition;
 using Layering1.Domain;
+using Layering1.Presentation;
 
 namespace Persistence.WinForms
 {
@@ -64,7 +65,14 @@ namespace Persistence.WinForms
 
         private void btnScan_Click(object sender, EventArgs e)
         {
-            
+            var lst = ScamFormFormat.infoFormat(txtEnrollment.Text);
+
+            txtName.Text = lst[0];
+            txtAge.Text = lst[1];
+            txtEnrollment.Text = lst[2];
+            txtFirstDose.Text = lst[3];
+            txtSecondDose.Text = lst[4];
+
         }
     }
 }

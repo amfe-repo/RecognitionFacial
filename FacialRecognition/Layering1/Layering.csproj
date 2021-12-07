@@ -73,6 +73,7 @@
       <DependentUpon>ModelEnitity.tt</DependentUpon>
     </Compile>
     <Compile Include="Presentation\ConfirmDialogFormat.cs" />
+    <Compile Include="Presentation\ScamFormFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
