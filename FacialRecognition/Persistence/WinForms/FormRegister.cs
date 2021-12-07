@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using FaceRecognition;
+using Layering1.Domain;
 
 namespace Persistence.WinForms
 {
     public partial class FormRegister : Form
     {
+
+        private FaceRec face = new FaceRec();
+
         public FormRegister()
         {
             InitializeComponent();
@@ -41,14 +46,37 @@ namespace Persistence.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogConfirm dialog = new DialogConfirm("confirm");
-            dialog.ShowDialog();
-            this.Close();
+            try 
+            {
+                face.Save_IMAGE(textBox3.Text);
+
+                DataHelpers dh = new DataHelpers();
+                dh.InsertData(textBox1.Text, int.Parse(textBox2.Text), textBox3.Text, textBox4.Text, textBox5.Text, checkBox1.Checked, false);
+
+                DialogConfirm dialog = new DialogConfirm("confirm");
+                dialog.ShowDialog();
+                this.Close();
+            }
+            catch (Exception el) 
+            {
+                DialogConfirm dialog = new DialogConfirm("error");
+                dialog.ShowDialog();
+                this.Close();
+            }
+            
+
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            face.openCamera(pictureBox1, pictureBox2);
+            face.isTrained = true;
         }
     }
 }
