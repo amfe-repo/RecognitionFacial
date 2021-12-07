@@ -46,25 +46,31 @@ namespace Persistence.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try 
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox3.TextLength != 11 || textBox4.Text == "" || textBox5.Text == "" || pictureBox1.Image == null)
             {
-                face.Save_IMAGE(textBox3.Text);
-
-                DataHelpers dh = new DataHelpers();
-                dh.InsertData(textBox1.Text, int.Parse(textBox2.Text), textBox3.Text, textBox4.Text, textBox5.Text, checkBox1.Checked, false);
-
-                DialogConfirm dialog = new DialogConfirm("confirm");
-                dialog.ShowDialog();
-                this.Close();
+                MessageBox.Show("No se pudo registrar la información, compruebe que no haya campos vacíos o el Enrollment contenga 11 dígitos..");
             }
-            catch (Exception el) 
+            else
             {
-                DialogConfirm dialog = new DialogConfirm("error");
-                dialog.ShowDialog();
-                this.Close();
-            }
-            
+                try
+                {
+                    face.Save_IMAGE(textBox3.Text);
 
+                    DataHelpers dh = new DataHelpers();
+                    dh.InsertData(textBox1.Text, int.Parse(textBox2.Text), textBox3.Text, textBox4.Text, textBox5.Text, checkBox1.Checked, false);
+
+                    DialogConfirm dialog = new DialogConfirm("confirm");
+                    dialog.ShowDialog();
+                    this.Close();
+                }
+                catch (Exception el)
+                {
+                    DialogConfirm dialog = new DialogConfirm("error");
+                    dialog.ShowDialog();
+                    this.Close();
+                }
+
+            }
             
         }
 
