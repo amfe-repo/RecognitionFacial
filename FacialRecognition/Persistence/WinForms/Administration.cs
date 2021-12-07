@@ -53,6 +53,7 @@ namespace Persistence.WinForms
                 {
                     oObj.idUser,
                     oObj.NameUser,
+                    oObj.Age,
                     oObj.Enrollment,
                     oObj.FirstDose,
                     oObj.SecondDose,
@@ -71,7 +72,29 @@ namespace Persistence.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            refresh_data();
+            FormRegister frm = new FormRegister();
+            frm.ShowDialog();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex == 8) 
+            {
+                UpdateForm frm = new UpdateForm();
+                frm.textName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                frm.textAge.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                frm.textEnrollment.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                frm.textFirstDose.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                frm.textSecondDose.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                frm.chkVaccinated.Checked = (bool)dataGridView1.Rows[e.RowIndex].Cells[6].Value;
+                frm.ShowDialog();
+            }
+
+            if (e.ColumnIndex == 9)
+            {
+                DialogConfirm dialog = new DialogConfirm("delete");
+                dialog.ShowDialog();
+            }
         }
     }
 }

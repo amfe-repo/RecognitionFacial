@@ -31,22 +31,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblExit = new System.Windows.Forms.Label();
             this.lblMinimize = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnScan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtEnrollment = new System.Windows.Forms.TextBox();
+            this.txtFirstDose = new System.Windows.Forms.TextBox();
+            this.txtSecondDose = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,19 +87,20 @@
             this.lblMinimize.Text = "-";
             this.lblMinimize.Click += new System.EventHandler(this.lblMinimize_Click);
             // 
-            // button1
+            // btnScan
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(376, 451);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(363, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "PLEASE SCAN";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnScan.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnScan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScan.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScan.ForeColor = System.Drawing.Color.White;
+            this.btnScan.Location = new System.Drawing.Point(376, 451);
+            this.btnScan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(363, 46);
+            this.btnScan.TabIndex = 1;
+            this.btnScan.Text = "PLEASE SCAN";
+            this.btnScan.UseVisualStyleBackColor = false;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
             // label1
             // 
@@ -166,81 +169,90 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Second dose";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(375, 49);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(364, 36);
-            this.textBox1.TabIndex = 8;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtName.Location = new System.Drawing.Point(375, 49);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(364, 36);
+            this.txtName.TabIndex = 8;
             // 
-            // textBox2
+            // txtAge
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(375, 127);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(364, 36);
-            this.textBox2.TabIndex = 9;
+            this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAge.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAge.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtAge.Location = new System.Drawing.Point(375, 127);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(364, 36);
+            this.txtAge.TabIndex = 9;
             // 
-            // textBox3
+            // txtEnrollment
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox3.Location = new System.Drawing.Point(375, 215);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(364, 36);
-            this.textBox3.TabIndex = 10;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtEnrollment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnrollment.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnrollment.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtEnrollment.Location = new System.Drawing.Point(375, 215);
+            this.txtEnrollment.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEnrollment.Name = "txtEnrollment";
+            this.txtEnrollment.Size = new System.Drawing.Size(364, 36);
+            this.txtEnrollment.TabIndex = 10;
+            this.txtEnrollment.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox4
+            // txtFirstDose
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox4.Location = new System.Drawing.Point(375, 308);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(364, 36);
-            this.textBox4.TabIndex = 11;
+            this.txtFirstDose.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFirstDose.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstDose.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtFirstDose.Location = new System.Drawing.Point(375, 308);
+            this.txtFirstDose.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFirstDose.Name = "txtFirstDose";
+            this.txtFirstDose.Size = new System.Drawing.Size(364, 36);
+            this.txtFirstDose.TabIndex = 11;
             // 
-            // textBox5
+            // txtSecondDose
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox5.Location = new System.Drawing.Point(375, 399);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(364, 36);
-            this.textBox5.TabIndex = 12;
+            this.txtSecondDose.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSecondDose.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondDose.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtSecondDose.Location = new System.Drawing.Point(375, 399);
+            this.txtSecondDose.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSecondDose.Name = "txtSecondDose";
+            this.txtSecondDose.Size = new System.Drawing.Size(364, 36);
+            this.txtSecondDose.TabIndex = 12;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.txtSecondDose);
+            this.panel2.Controls.Add(this.txtFirstDose);
+            this.panel2.Controls.Add(this.txtEnrollment);
+            this.panel2.Controls.Add(this.txtAge);
+            this.panel2.Controls.Add(this.txtName);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnScan);
             this.panel2.Location = new System.Drawing.Point(21, 47);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(783, 511);
             this.panel2.TabIndex = 13;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(100, 399);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(130, 89);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
             // 
             // ScamForm
             // 
@@ -259,6 +271,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,20 +279,21 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnScan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtEnrollment;
+        private System.Windows.Forms.TextBox txtFirstDose;
+        private System.Windows.Forms.TextBox txtSecondDose;
         private System.Windows.Forms.Label lblExit;
         private System.Windows.Forms.Label lblMinimize;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

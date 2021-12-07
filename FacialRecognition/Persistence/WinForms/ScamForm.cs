@@ -55,5 +55,10 @@ namespace Persistence.WinForms
         {
 
         }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

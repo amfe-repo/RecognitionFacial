@@ -72,11 +72,10 @@
     <Compile Include="Integration\user_tb.cs">
       <DependentUpon>ModelEnitity.tt</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\ConfirmDialogFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Presentation\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.Config" />
     <EntityDeploy Include="Integration\ModelEnitity.edmx">

@@ -33,3 +33,5 @@ E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\UI.csproj.CopyComplete
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.dll
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.xml
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.DialogConfirm.resources
+E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.UpdateForm.resources
