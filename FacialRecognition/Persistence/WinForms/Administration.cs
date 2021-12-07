@@ -45,8 +45,6 @@ namespace Persistence.WinForms
         {
             dataGridView1.Rows.Clear();
 
-            
-
             foreach (var oObj in dh.ShowData())
             {
                 dataGridView1.Rows.Add(new object[]

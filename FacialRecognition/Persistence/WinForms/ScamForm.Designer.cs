@@ -45,6 +45,7 @@
             this.txtSecondDose = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblVaccinated = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -228,6 +229,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.lblVaccinated);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.txtSecondDose);
             this.panel2.Controls.Add(this.txtFirstDose);
@@ -253,6 +255,15 @@
             this.pictureBox2.Size = new System.Drawing.Size(130, 89);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            // 
+            // lblVaccinated
+            // 
+            this.lblVaccinated.AutoSize = true;
+            this.lblVaccinated.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVaccinated.Location = new System.Drawing.Point(104, 48);
+            this.lblVaccinated.Name = "lblVaccinated";
+            this.lblVaccinated.Size = new System.Drawing.Size(0, 37);
+            this.lblVaccinated.TabIndex = 14;
             // 
             // ScamForm
             // 
@@ -295,5 +306,6 @@
         private System.Windows.Forms.Label lblMinimize;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblVaccinated;
     }
 }

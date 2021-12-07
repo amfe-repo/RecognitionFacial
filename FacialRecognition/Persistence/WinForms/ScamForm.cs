@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using FaceRecognition;
+using Layering1.Domain;
 
 namespace Persistence.WinForms
 {
     public partial class ScamForm : Form
     {
+        private FaceRec face = new FaceRec();
+
         public ScamForm()
         {
             InitializeComponent();
@@ -43,7 +47,9 @@ namespace Persistence.WinForms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            face.openCamera(pictureBox1, pictureBox2);
+            face.isTrained = true;
+            face.getPersonName(txtEnrollment);
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -58,7 +64,7 @@ namespace Persistence.WinForms
 
         private void btnScan_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
