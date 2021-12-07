@@ -10,3 +10,15 @@ E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering.csproj.CopyComplete
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering1.dll
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Layering1\obj\Debug\Layering1.pdb
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\Layering1.dll.config
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\Layering1.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\Layering1.pdb
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\EntityFramework.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\EntityFramework.xml
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\obj\Debug\Layering.csproj.AssemblyReference.cache
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\obj\Debug\Layering.csproj.CoreCompileInputs.cache
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\obj\Debug\Layering.csproj.CopyComplete
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\obj\Debug\Layering1.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Layering1\obj\Debug\Layering1.pdb

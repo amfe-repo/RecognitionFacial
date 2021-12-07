@@ -35,3 +35,14 @@ E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.xml
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.DialogConfirm.resources
 E:\Things\Cosas Magicas\ITLA CUARTO CUATRIMESTRE\Disenio centrado en el usuario\Proyecto final\Proyecto\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.UpdateForm.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\EntityFramework.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\Layering1.dll
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\Layering1.pdb
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\Layering1.dll.config
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\EntityFramework.xml
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.DialogConfirm.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.Administration.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\Persistence.WinForms.UpdateForm.resources
+C:\Users\paraq\source\repos\RecognitionFacial\FacialRecognition\Persistence\obj\Debug\UI.csproj.CopyComplete
