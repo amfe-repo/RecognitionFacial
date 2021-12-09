@@ -25,9 +25,15 @@ namespace Persistence.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogConfirm dialog = new DialogConfirm("confirm");
-            dialog.ShowDialog();
-            this.Close();
+            if (textName.Text == "" || textAge.Text == "" || textEnrollment.Text == "" || textFirstDose.Text == "" || textSecondDose.Text == "" || pictureBox1.Image == null)
+            {
+                MessageBox.Show("No se pueden insertar los datos,verifique que no hayan campos vacíos.");
+            }
+            else {
+                DialogConfirm dialog = new DialogConfirm("confirm");
+                dialog.ShowDialog();
+                this.Close();
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

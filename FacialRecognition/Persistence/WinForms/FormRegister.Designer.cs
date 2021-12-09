@@ -70,7 +70,7 @@
             this.lblMinimize.AutoSize = true;
             this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMinimize.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinimize.Location = new System.Drawing.Point(1001, 0);
+            this.lblMinimize.Location = new System.Drawing.Point(1021, -3);
             this.lblMinimize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinimize.Name = "lblMinimize";
             this.lblMinimize.Size = new System.Drawing.Size(33, 45);
