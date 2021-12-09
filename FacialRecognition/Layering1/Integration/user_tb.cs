@@ -22,5 +22,6 @@ namespace Layering1.Integration
         public string SecondDose { get; set; }
         public bool Vaccinated { get; set; }
         public bool RoleUser { get; set; }
+        public string Password { get; set; }
     }
 }

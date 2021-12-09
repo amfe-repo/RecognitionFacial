@@ -12,6 +12,7 @@
     <Property Name="SecondDose" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Vaccinated" Type="Boolean" Nullable="false" />
     <Property Name="RoleUser" Type="Boolean" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="UserEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="user_tb" EntityType="Self.user_tb" />

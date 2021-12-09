@@ -4,6 +4,7 @@
     <EntitySetMapping Name="user_tb">
       <EntityTypeMapping TypeName="UserModel.user_tb">
         <MappingFragment StoreEntitySet="user_tb">
+          <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="idUser" ColumnName="idUser" />
           <ScalarProperty Name="NameUser" ColumnName="NameUser" />
           <ScalarProperty Name="Age" ColumnName="Age" />
