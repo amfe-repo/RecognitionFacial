@@ -25,7 +25,7 @@ namespace Persistence.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textName.Text == "" || textAge.Text == "" || textEnrollment.Text == "" || textFirstDose.Text == "" || textSecondDose.Text == "" || pictureBox1.Image == null)
+            if (textName.Text == "" || textAge.Text == "" || textEnrollment.Text == "" || textFirstDose.Text == "" || textSecondDose.Text == "")
             {
                 MessageBox.Show("No se pueden insertar los datos,verifique que no hayan campos vacíos.");
             }
