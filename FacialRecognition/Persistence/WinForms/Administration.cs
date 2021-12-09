@@ -15,6 +15,7 @@ namespace Persistence.WinForms
     public partial class Administration : Form
     {
         private DataHelpers dh = new DataHelpers();
+        private Form lastForm = null;
         public Administration()
         {
             InitializeComponent();
@@ -63,6 +64,8 @@ namespace Persistence.WinForms
             }
         }
 
+       
+
         private void Administration_Load(object sender, EventArgs e)
         {
             refresh_data();
@@ -72,27 +75,42 @@ namespace Persistence.WinForms
         {
             FormRegister frm = new FormRegister();
             frm.ShowDialog();
+            refresh_data();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 8) 
+            try 
             {
-                UpdateForm frm = new UpdateForm();
-                frm.textName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                frm.textAge.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                frm.textEnrollment.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                frm.textFirstDose.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                frm.textSecondDose.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                frm.chkVaccinated.Checked = (bool)dataGridView1.Rows[e.RowIndex].Cells[6].Value;
-                frm.ShowDialog();
-            }
+                if (e.ColumnIndex == 8)
+                {
+                    UpdateForm frm = new UpdateForm();
+                    frm.textName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    frm.textAge.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    frm.textEnrollment.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    frm.textFirstDose.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    frm.textSecondDose.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    frm.chkVaccinated.Checked = (bool)dataGridView1.Rows[e.RowIndex].Cells[6].Value;
+                    frm.ShowDialog();
+                }
 
-            if (e.ColumnIndex == 9)
+                if (e.ColumnIndex == 9)
+                {
+                    DialogConfirm dialog = new DialogConfirm("delete");
+                    dialog.ShowDialog();
+                }
+            }
+            catch (Exception ex) 
             {
-                DialogConfirm dialog = new DialogConfirm("delete");
+                DialogConfirm dialog = new DialogConfirm("error");
                 dialog.ShowDialog();
             }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            refresh_data();
         }
     }
 }

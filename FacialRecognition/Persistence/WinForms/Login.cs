@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Layering1.Domain;
+using Persistence.WinForms;
 
 namespace Persistence
 {
@@ -25,6 +27,25 @@ namespace Persistence
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Program.state = null;
+
+            string frmState = LoginDomain.loginValidation(textBox1.Text, textBox2.Text);
+
+            if (frmState == "True") 
+            {
+                Program.state = "Admin";
+                this.Close();
+            }
+            else if(frmState == "False")
+            {
+                Program.state = "Scan";
+                this.Close();
+            }
+            else 
+            {
+                DialogConfirm dialog = new DialogConfirm("error");
+                dialog.ShowDialog();
+            }
 
         }
 
@@ -93,6 +114,11 @@ namespace Persistence
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

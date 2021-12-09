@@ -12,11 +12,11 @@ namespace Layering1.Domain
 {
     public class DataHelpers
     {
-        public List<MostrarDatos_Result> ShowData() 
+        public List<user_tb> ShowData() 
         {
             using (UserEntities dbContext = new UserEntities()) 
             {
-                var dh = dbContext.MostrarDatos().ToList();
+                var dh = dbContext.user_tb.ToList();
 
                 return dh;
             }

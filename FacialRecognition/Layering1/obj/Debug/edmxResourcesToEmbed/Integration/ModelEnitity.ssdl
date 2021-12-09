@@ -12,6 +12,7 @@
     <Property Name="SecondDose" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Vaccinated" Type="bit" Nullable="false" />
     <Property Name="RoleUser" Type="bit" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
   </EntityType>
   <Function Name="EditarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="NameUser" Type="varchar" Mode="In" />
