@@ -29,7 +29,7 @@ namespace Layering1.Integration
     
         public virtual DbSet<user_tb> user_tb { get; set; }
     
-        public virtual int EditarDatos(string nameUser, Nullable<int> age, string enrollment, string firstDose, string secondDose, Nullable<bool> vaccinated, Nullable<bool> roleUser, Nullable<int> idUser)
+        public virtual int EditarDatos(string nameUser, Nullable<int> age, string enrollment, string firstDose, string secondDose, Nullable<bool> vaccinated, Nullable<int> idUser)
         {
             var nameUserParameter = nameUser != null ?
                 new ObjectParameter("NameUser", nameUser) :
@@ -55,15 +55,11 @@ namespace Layering1.Integration
                 new ObjectParameter("Vaccinated", vaccinated) :
                 new ObjectParameter("Vaccinated", typeof(bool));
     
-            var roleUserParameter = roleUser.HasValue ?
-                new ObjectParameter("RoleUser", roleUser) :
-                new ObjectParameter("RoleUser", typeof(bool));
-    
             var idUserParameter = idUser.HasValue ?
                 new ObjectParameter("idUser", idUser) :
                 new ObjectParameter("idUser", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("EditarDatos", nameUserParameter, ageParameter, enrollmentParameter, firstDoseParameter, secondDoseParameter, vaccinatedParameter, roleUserParameter, idUserParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("EditarDatos", nameUserParameter, ageParameter, enrollmentParameter, firstDoseParameter, secondDoseParameter, vaccinatedParameter, idUserParameter);
         }
     
         public virtual int EliminarDatos(Nullable<int> idUser)

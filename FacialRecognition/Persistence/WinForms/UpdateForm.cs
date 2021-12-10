@@ -8,11 +8,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Layering1.Domain;
 
 namespace Persistence.WinForms
 {
     public partial class UpdateForm : Form
     {
+        public int idUser = 0;
         public UpdateForm()
         {
             InitializeComponent();
@@ -30,6 +32,8 @@ namespace Persistence.WinForms
                 MessageBox.Show("No se pueden insertar los datos,verifique que no hayan campos vacíos.");
             }
             else {
+                DataHelpers dh = new DataHelpers();
+                dh.UpdateData(this.textName.Text, int.Parse(this.textAge.Text), this.textEnrollment.Text, this.textFirstDose.Text, this.textSecondDose.Text, this.chkVaccinated.Checked, this.idUser);
                 DialogConfirm dialog = new DialogConfirm("confirm");
                 dialog.ShowDialog();
                 this.Close();

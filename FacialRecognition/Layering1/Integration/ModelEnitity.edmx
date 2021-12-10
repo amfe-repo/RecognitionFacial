@@ -26,7 +26,6 @@
           <Parameter Name="FirstDose" Type="varchar" Mode="In" />
           <Parameter Name="SecondDose" Type="varchar" Mode="In" />
           <Parameter Name="Vaccinated" Type="bit" Mode="In" />
-          <Parameter Name="RoleUser" Type="bit" Mode="In" />
           <Parameter Name="idUser" Type="int" Mode="In" />
         </Function>
         <Function Name="EliminarDatos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -72,7 +71,6 @@
             <Parameter Name="FirstDose" Mode="In" Type="String" />
             <Parameter Name="SecondDose" Mode="In" Type="String" />
             <Parameter Name="Vaccinated" Mode="In" Type="Boolean" />
-            <Parameter Name="RoleUser" Mode="In" Type="Boolean" />
             <Parameter Name="idUser" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="EliminarDatos">

@@ -22,13 +22,5 @@ namespace Layering1.Domain
             return "NaN";
         }
 
-        public static bool adminValidation(string username, string password)
-        {
-            var value = from p in dh.ShowData() where p.NameUser == username && p.Password == password && p.RoleUser == true select p;
-
-            if(value.FirstOrDefault() != null)
-                return true;
-            return false;
-        }
     }
 }

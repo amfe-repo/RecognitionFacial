@@ -39,13 +39,13 @@ namespace Layering1.Domain
             }
         }
 
-        public void UpdateData(string fullName, int age, string enrollment, string firstDose, string secondDose, bool vaccinated, bool roleUser, int idUser)
+        public void UpdateData(string fullName, int age, string enrollment, string firstDose, string secondDose, bool vaccinated, int idUser)
         {
             using (UserEntities dbContext = new UserEntities())
             {
                 try
                 {
-                    dbContext.EditarDatos(fullName, age, enrollment, firstDose, secondDose, vaccinated, roleUser, idUser);
+                    dbContext.EditarDatos(fullName, age, enrollment, firstDose, secondDose, vaccinated, idUser);
                     dbContext.SaveChanges();
                 }
                 catch (Exception e)

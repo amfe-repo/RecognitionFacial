@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.chkVaccinated = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textSecondDose = new System.Windows.Forms.TextBox();
             this.textFirstDose = new System.Windows.Forms.TextBox();
@@ -44,7 +46,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMinimize = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.chkVaccinated = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -71,6 +72,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(801, 524);
             this.panel2.TabIndex = 15;
+            // 
+            // chkVaccinated
+            // 
+            this.chkVaccinated.AutoSize = true;
+            this.chkVaccinated.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkVaccinated.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkVaccinated.Location = new System.Drawing.Point(57, 476);
+            this.chkVaccinated.Name = "chkVaccinated";
+            this.chkVaccinated.Size = new System.Drawing.Size(129, 34);
+            this.chkVaccinated.TabIndex = 14;
+            this.chkVaccinated.Text = "Vaccinated";
+            this.chkVaccinated.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -114,6 +127,7 @@
             this.textEnrollment.Location = new System.Drawing.Point(375, 227);
             this.textEnrollment.Margin = new System.Windows.Forms.Padding(2);
             this.textEnrollment.Name = "textEnrollment";
+            this.textEnrollment.ReadOnly = true;
             this.textEnrollment.Size = new System.Drawing.Size(366, 36);
             this.textEnrollment.TabIndex = 9;
             // 
@@ -239,18 +253,6 @@
             this.label6.Text = "X";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // chkVaccinated
-            // 
-            this.chkVaccinated.AutoSize = true;
-            this.chkVaccinated.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkVaccinated.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkVaccinated.Location = new System.Drawing.Point(57, 476);
-            this.chkVaccinated.Name = "chkVaccinated";
-            this.chkVaccinated.Size = new System.Drawing.Size(129, 34);
-            this.chkVaccinated.TabIndex = 14;
-            this.chkVaccinated.Text = "Vaccinated";
-            this.chkVaccinated.UseVisualStyleBackColor = true;
-            // 
             // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,6 +262,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpdateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateForm";

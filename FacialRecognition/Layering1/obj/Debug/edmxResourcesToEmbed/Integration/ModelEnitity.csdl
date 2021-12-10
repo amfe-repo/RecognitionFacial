@@ -23,7 +23,6 @@
       <Parameter Name="FirstDose" Mode="In" Type="String" />
       <Parameter Name="SecondDose" Mode="In" Type="String" />
       <Parameter Name="Vaccinated" Mode="In" Type="Boolean" />
-      <Parameter Name="RoleUser" Mode="In" Type="Boolean" />
       <Parameter Name="idUser" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="EliminarDatos">
